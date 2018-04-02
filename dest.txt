@@ -1,0 +1,4 @@
+Hello, Good Afternoon!!Hello, From Node FS application
+Using different methods of File System
+Could be an append in near future!
+Bye

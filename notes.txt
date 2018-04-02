@@ -1,0 +1,221 @@
+ ** Node JS Training **
+ 
+ Pre-requistes:
+ HTML / JS / CSS
+ 
+ Node JS :
+	open source
+	cross platform
+	Runtime environment for executing JS code outside the browser (server side)
+	Asynchronous and Non blocking
+	
+	
+	APIs.
+	
+	Applications : highly scalable, data - intensive  and real time applns, Disk i/o
+	
+	CPU intensive: No for Node: 
+	
+	Why Node JS:
+		1. Easy to start can be used for agile development
+		2. Highly scalabale services. application areas: Paypal, Netflix, Walmart
+				Build faster with fewer people
+				less lines of code
+				few files
+				twice as many requests per seconds
+				avg response time is reduced
+		3. JS : front end and back end. Full stack developer
+		4. JS : code is cleaner and consistent
+		5. Largest eco-system of open source libraries
+		
+Runtime Environment:
+			JS Engine: interpret JS code
+			
+			2009 : Ryan Dahl 
+			
+			File System
+			Create server: HTTP
+			
+			Not present : window / document
+			
+			NODE:
+			Global object : global
+			console
+			__filename
+			__dirname
+			process : NODE JS Runtime Envt
+			
+			
+			*** VARS + FUNTCONS: they are not scoped with the global object: to avoid manipulation:
+			
+			Build applications: Reliable + maintainable
+			
+			VARS + FUNTCONS: they are scoped with the file in which they are created.
+			(Module) = file (app.js) =  Modularity
+			
+				Export a module: exports
+				Import : require = Custom + Built in modules
+				
+				
+			Event Loop : Thread loop :
+
+Installation:
+				https://nodejs.org/en/
+				
+				* REPL: Terminal (Cmd Line Tool) *
+					R : Read the input : Data structure 
+					E : Eval 
+					P: Print the output
+					L : Loop 
+
+File System module:
+
+	Reading / Writing / Appending to a file
+	Asyn methods
+	
+Event Emitter
+
+	event: signal that something has changed
+	
+Stream module:
+	based on events
+
+HTTP: Module: 
+
+Express Module : Framework to create web applications:
+		Created over the HTTP module of Node
+
+			REST :
+			Representational State Transfer : Convention to build HTTP services: [end-points]
+			
+			HTTP methods: (verb:action)
+			GET				Retrieve
+			POST			Create
+			PUT				Update
+			DELETE			Delete
+						
+						+
+						
+			http://videoonrent.com/api/customers  : Resources (URLs)
+					CRUD
+			1. All customers: GET
+					http://videoonrent.com/api/customers
+						RESPONSE  [
+							{
+								'name':' '
+							},
+						]
+			2. Single Customer : GET	
+					http://videoonrent.com/api/customers/1
+						RESPONSE	
+							{
+								'name': ' '
+							}
+			3. Update Customer: PUT
+					http://videoonrent.com/api/customers/1
+						REQUEST BODY {
+							'name': ' '
+						}
+						
+						RESPONSE	
+						{
+								'name': ' '
+						}
+							
+			4. Delete Customer: DELETE
+					http://videoonrent.com/api/customers/1
+			
+			5. Create a Customer: POST
+					http://videoonrent.com/api/customers/
+					REQUEST BODY {
+						'name': ' '
+					}
+						
+					RESPONSE:
+					{
+						'name': ' '
+					}
+					
+		ROUTING : middleware different routes [URL patterns to different endpoints]	
+		
+		JOi : Java script validator framework. On the JS object
+		
+		Mongo DB : NO SQL DB
+		Version 3.2 (server)
+			JSON
+			
+			collection : table
+			document : row
+			
+			db.myCollection.insert([
+				{'name':'AT & T'},
+				{'name':'Acumos'},
+			])
+			
+			db.customers.insert([
+				{"custId":1001,"custName":"Jack","custPhone":4567890123},
+				{"custId":1002,"custName":"Aadel","custPhone":8989123456},
+				{"custId":1003,"custName":"Jessica","custPhone":9076543214},
+				{"custId":1004,"custName":"Sebastian","custPhone":6734567890},
+				{"custId":1005,"custName":"Apeksha","custPhone":4567890123},
+			])
+		
+			Mongo DB : DB						Express Application (NODE)
+				Mongod
+				Mongoose : Driver between the Mongo DB and Express f/w (Node)
+				[flexible schema structure]
+				ODM : Object Document Mapper [Data model]
+				
+				Model : Schema : Structure of the Document
+					Fields and Data types for each of these fields
+				
+			MEAN : Mongo DB
+				   Express
+				   Angular 
+				   Node
+					
+NPM : Node Package Manager
+	utility tool comes bundled with Node JS
+	NPM repository
+	
+	Commands:
+	
+1. To get the version
+	npm -v	
+
+2. To get the npm modules
+	npm ls
+	npm ls -g
+	
+	** Run npm init prior to nm install **
+	
+3. To install a module [node_modules]
+   npm install express
+   
+4. To uninstall a module
+	npm uninstall express
+
+5. To update a module
+	npm update express
+
+6. To search a module
+	npm search express
+	
+7. npm init
+		manifest file: package.json
+		
+	** POSTMAN ** Chrome extension
+	ONLINE REST APIs
+	
+** nodemon ** -> Node Monitor
+		watch mode: all the files for changes...restart the server
+	
+8. npm install nodemon -g
+ 
+9. nodemon httpServer.js
+
+10. npm install joi
+
+11. npm install mongoose
+ 
+ 
